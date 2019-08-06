@@ -1,0 +1,57 @@
+{
+  "name": "react-redux-starter-pl",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=11.0.0",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@zeit/next-sass": "^1.0.1",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "bootstrap-scss": "^4.3.1",
+    "deep-freeze": "^0.0.1",
+    "enzyme-to-json": "^3.3.5",
+    "eslint-config-airbnb": "^17.1.1",
+    "next": "^8.1.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "webpack": "^4.35.2",
+    "redux-mock-store": "^1.5.3"
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "5.3.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-watch": "^5.1.2",
+    "jest": "^24.8.0",
+    "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --coverage --no-cache",
+    "test:watch": "jest --watchAll --coverage --no-cache",
+    "eslint": "esw ./ --color",
+    "eslint:fix": "yarn eslint --fix",
+    "eslint:watch": "yarn eslint -w"
+  },
+  "pre-commit": [
+    "eslint"
+  ],
+  "pre-push": [
+    "test"
+  ]
+}
