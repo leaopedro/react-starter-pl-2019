@@ -1,5 +1,4 @@
 # React + Redux Starter V2
-Author: Pedro Leão
 
 ## Launching:
 
